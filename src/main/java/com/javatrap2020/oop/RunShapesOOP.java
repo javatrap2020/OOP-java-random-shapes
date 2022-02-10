@@ -3,6 +3,7 @@ package com.javatrap2020.oop;
 import com.javatrap2020.oop.shapes.ShapeCreator;
 import com.javatrap2020.oop.shapes.ShapeInterface;
 import com.javatrap2020.oop.shapes.circle.CircleCreator;
+import com.javatrap2020.oop.shapes.square.SquareCreator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +19,7 @@ public class RunShapesOOP {
 
         List<ShapeCreator> randomShapes = new ArrayList<>();
         randomShapes.add(new CircleCreator());
+        randomShapes.add(new SquareCreator());
 
         int SIZE = (int)  GenerateValue(1, 10);
 
