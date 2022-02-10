@@ -30,7 +30,7 @@ public class Square implements ShapeInterface {
     @Override
     public String toString() {
         return "Square{" +
-                "color='" + color + '\'' +
+                "color='" + getColor() + '\'' +
                 ", side=" + side + ", Area="
                 + calculateArea() + '}';
     }
