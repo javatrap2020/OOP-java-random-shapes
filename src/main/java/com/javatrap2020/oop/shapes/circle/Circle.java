@@ -12,6 +12,10 @@ public class Circle implements ShapeInterface {
         R = r;
     }
 
+    public double getR() {
+        return R;
+    }
+
     @Override
     public void draw() {
         System.out.println(this);
@@ -31,7 +35,7 @@ public class Circle implements ShapeInterface {
     public String toString() {
         return "Circle{" +
                 "color='" + getColor() + '\'' +
-                ", R=" + R + ", Area="
+                ", R=" + getR() + ", Area="
                 + calculateArea() + '}';
     }
 

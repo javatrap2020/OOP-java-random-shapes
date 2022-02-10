@@ -4,6 +4,7 @@ import com.javatrap2020.oop.shapes.ShapeCreator;
 import com.javatrap2020.oop.shapes.ShapeInterface;
 import com.javatrap2020.oop.shapes.circle.CircleCreator;
 import com.javatrap2020.oop.shapes.square.SquareCreator;
+import com.javatrap2020.oop.shapes.trapeze.TrapezeCreator;
 import com.javatrap2020.oop.shapes.triangle.TriangleCreator;
 
 import java.util.ArrayList;
@@ -22,8 +23,9 @@ public class RunShapesOOP {
         randomShapes.add(new CircleCreator());
         randomShapes.add(new SquareCreator());
         randomShapes.add(new TriangleCreator());
+        randomShapes.add(new TrapezeCreator());
 
-        int SIZE = (int)  GenerateValue(1, 10);
+        int SIZE = (int)  GenerateValue(1, 20);
 
         ShapeInterface[] shapeBases = new ShapeInterface[SIZE];
 

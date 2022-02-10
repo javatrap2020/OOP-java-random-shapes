@@ -12,6 +12,10 @@ public class Square implements ShapeInterface {
         this.side = side;
     }
 
+    public double getSide() {
+        return side;
+    }
+
     @Override
     public void draw() {
         System.out.println(this);
@@ -31,7 +35,7 @@ public class Square implements ShapeInterface {
     public String toString() {
         return "Square{" +
                 "color='" + getColor() + '\'' +
-                ", side=" + side + ", Area="
+                ", side=" + getSide() + ", Area="
                 + calculateArea() + '}';
     }
 }
